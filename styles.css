@@ -125,17 +125,3 @@ font-weight: 600;}
   text-decoration: underline;
   font-weight: 600;
 }
-
-
-/**/
-
-
-.login-box.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Siyah ve %50 opaklık */
-  z-index: 1;
-}
