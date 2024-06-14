@@ -10,6 +10,7 @@ body {
   background-position:center;
   background-attachment: fixed;
   background-size: cover;
+  overflow: auto;
   justify-content: center;
   align-items: center;
   display: flex;
