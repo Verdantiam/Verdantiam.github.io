@@ -1,9 +1,10 @@
-/*Font Type*/
+/* Font Type */
 @font-face {
   font-family: 'Mordred';
-  src: url(Font/Mordred.ttf);}
+  src: url(Font/Mordred.ttf);
+}
 
-/*Login Page*/
+/* Login Background */
 body {
   background-image: url(İmages/Background.png);
   background-repeat: no-repeat;
@@ -13,36 +14,40 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
-  min-height: 100vh;}
+  min-height: 100vh;
+}
 
-/*Login Box Settings*/
+/* Login Box */
 * {
   box-sizing:border-box;
   font-family: 'Mordred';
   margin:0;
-  padding:0;}
+  padding:0;
+}
 
-/*Login Box*/
-.login-box{
+.login-box {
 width:420px;
 color: black;
 background-color:transparent;
-padding: 30px 40px;}
+padding: 30px 40px;
+}
 
-/*Title Login*/
+/* Login Box Title */
 .login-box h1 {
-font-size: 36px;
-text-align:center;}
+font-size: 40px;
+text-align:center;
+}
 
-/*Login Page*/
-.login-box .input-box{
+/* E-Mail and Password */
+.login-box .input-box {
   position: relative;
   width: 100%;
   height: 50px;
-  margin: 30px 0;}
+  margin: 30px 0;
+}
 
-/*Login Box Input*/
-.input-box input{
+/* Login Box Input */
+.input-box input {
   width: 100%;
   height: 100%;
   background-image: url(İmages/UserAndPassBox.png);
@@ -54,49 +59,53 @@ text-align:center;}
   outline: none;
   font-size: 20px;
   font-weight: 600;
-  padding: 23px 45px 20px 23px;}
+  padding: 23px 45px 20px 23px;
+}
 
-/*Login Box Username And Password*/
-.input-box input::placeholder{
+/* Login Box E-Mail And Password Name */
+.input-box input::placeholder {
   color: black;
   font-size: 20px;
-  font-weight: 100;}
+  font-weight: 100;
+}
 
-/*Login Box User and Lock Icon*/
+/* Login Box User and Lock Icon */
 .input-box i {
   position: absolute;
   right: 25px;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 20px;}
+  font-size: 20px;
+}
 
-/*Login Box Remember Me*/
-.login-box .remember-forgat{
+/* Login Box Remember Me */
+.login-box .remember-forgat {
   display: flex;
   justify-content: space-between;
   font-size: 21px;
   margin: -15px 0 15px;
-  color: rgb(0, 0, 0);}
+  color: rgb(0, 0, 0);
+}
 
-/*Checkbox Color and Size*/
-  .remember-forgat label input{
-    accent-color: #fff;
-    margin-right: 5px;}
-
-/*Login Box Forget Password*/
-.remember-forgat a{
+/* Login Box Forget Password */
+.remember-forgat a {
   color: #000000;
   text-decoration: none;
-margin-left: 24px;}
-.remember-forgat a:hover{
+  margin-left: 24px;
+  font-size: 21px;
+}
+
+.remember-forgat a:hover {
   color: #000000;
   text-decoration: underline;
-  font-weight: 600;}
+  font-weight: 600;
+  font-size: 21px;
+}
 
-/*Login Box Login Button*/
+/* Login Box Login Button */
 .btn {
-  width: 100%;
-  height: 50px;
+width: 100%;
+height: 50px;
 background-image: url(İmages/LoginButton.jpg);
 background-size: 100% 100%;
 background-position: center;
@@ -106,29 +115,35 @@ border: none;
 outline: none;
 cursor: pointer;
 font-size: 24px;
-font-weight: 600;}
+font-weight: 600;
+color: #000000;
+}
 
-.login-box .register-link{
+.btn:hover {
+  background-image: url(İmages/LoginButtonHover.png);
+  color: #000000;
+}
+
+/* Login Box Register */
+
+.login-box .register-link {
   font-size: 24px;
   text-align: center;
   margin: 20px 0 15px;
  
 }
-.register-link p a{
+.register-link p a {
   color: #000000;
   text-decoration: none;
   font-weight: 600;
 }
-.register-link p a:hover{
+.register-link p a:hover {
   color: #000000;
   text-decoration: underline;
   font-weight: 600;
 }
 
-
-/*--*/
-
-/* Customize the label (the container) */
+/* Checkbox */
 .container {
   display: block;
   position: relative;
@@ -141,7 +156,7 @@ font-weight: 600;}
   user-select: none;
 }
 
-/* Hide the browser's default checkbox */
+/* Hide Checkbox */
 .container input {
   position: absolute;
   opacity: 0;
@@ -164,18 +179,12 @@ font-weight: 600;}
   background-repeat: no-repeat;
 }
 
-/* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
-  background-image: url(İmages/Checkbox.png);
+  background-image: url(İmages/CheckboxHover.png);
   background-size: 100% 100%;
-  background-position: center;
-  background-color: transparent;
-  background-repeat: no-repeat;}
+}
 
-/* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark {
   background-image: url(İmages/CheckboxTick.png);
   background-size: 100% 100%;
-  background-position: center;
-  background-color: transparent;
-  background-repeat: no-repeat;}
+}
