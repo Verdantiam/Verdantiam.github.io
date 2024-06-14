@@ -74,7 +74,7 @@ text-align:center;}
 .login-box .remember-forgat{
   display: flex;
   justify-content: space-between;
-  font-size: 20px;
+  font-size: 22px;
   margin: -15px 0 15px;
   color: rgb(0, 0, 0);}
 
@@ -87,7 +87,6 @@ text-align:center;}
 .remember-forgat a{
   color: #000000;
   text-decoration: none;
-font-size: 20px;
 margin-left: 24px;}
 .remember-forgat a:hover{
   color: #000000;
@@ -110,7 +109,7 @@ font-size: 24px;
 font-weight: 600;}
 
 .login-box .register-link{
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
   margin: 20px 0 15px;
  
@@ -125,3 +124,58 @@ font-weight: 600;}
   text-decoration: underline;
   font-weight: 600;
 }
+
+
+/*--*/
+
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-image: url(İmages/Checkbox.png);
+  background-size: 100% 100%;
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-image: url(İmages/Checkbox.png);
+  background-size: 100% 100%;
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-image: url(İmages/CheckboxTick.png);
+  background-size: 100% 100%;
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;}
